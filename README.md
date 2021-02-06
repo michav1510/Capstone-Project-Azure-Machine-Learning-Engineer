@@ -10,12 +10,16 @@ two different algorithms and deploy the best model. Finally the endpoint produce
 ## Dataset
 
 ### Overview
+
 *TODO*: Explain about the data you are using and where you got it from.
+
 The dataset I used is weatherAUS.csv(https://www.kaggle.com/jsphyg/weather-dataset-rattle-package). It describes some recorded weather data for years 2008,2009,2010 from
 some places in Australia. 
 
 ### Task
+
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
+
 I am using this data in order to predict the rainfall of a given date, location and temperature data. The features of the data are the following: 
 
 Date: The given date of which the rainfall happened or not.
