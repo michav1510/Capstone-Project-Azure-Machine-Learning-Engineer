@@ -1,13 +1,16 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
+# Capstone Project for Azure Machine Learning Engineer Nanodegree in Udacity 
 
-# Your Project Title Here
-
-*TODO:* Write a short introduction to your project.
+This project is the capstone project for "Machine Learning Engineer for Microsoft Azure" Udacity's Nanodegree. In this project we will choose 
+a public external dataset. This dataset will be used for train a model using 1) an Automated ML 2) Hyperdrive. After we will compare the performance of these
+two different algorithms and deploy the best model. After we will use the endpoint produced to take some answers about predictions.
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
 
 ## Dataset
+
+The dataset I used is weatherAUS.csv(https://www.kaggle.com/jsphyg/weather-dataset-rattle-package).  
+
 
 ### Overview
 *TODO*: Explain about the data you are using and where you got it from.
