@@ -13,34 +13,40 @@ two different algorithms and deploy the best model. Finally the endpoint produce
 
 *TODO*: Explain about the data you are using and where you got it from.
 
-The dataset I used is weatherAUS.csv(https://www.kaggle.com/jsphyg/weather-dataset-rattle-package). It describes some recorded weather data for years 2008,2009,2010 from
-some places in Australia. 
+The dataset I used is heart_failure_clinical_records_dataset.csv(https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). It describes some recorded health indicators metrics. The data have almost 300 rows iof the indicators 
 
 ### Task
 
 *TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
 
-I am using this data in order to predict the rainfall of a given date, location and temperature data. The features of the data are the following: 
+I am using this data in order to predict the DEATH_EVENT i.e. whether or not the patient deceased during the follow-up period (boolean). The features of the data are the following:
 
-Date: The given date of which the rainfall happened or not.
+age : The age of the patient.
 
-Location : The town/state in which the data recorded.
+anaemia : Decrease of red blood cells or hemoglobin (boolean).
 
-MinTemp : The minimum temperature recorded for the given date and location.
+creatinine_phosphokinase : Decrease of red blood cells or hemoglobin (boolean).
 
-MinTemp : The maximum temperature recorded for the given date and location.
+diabetes : If the patient has diabetes (boolean).
 
-RainFall : The amount of rainfall recorded for the day in mm.
+ejection_fraction : Percentage of blood leaving the heart at each contraction (percentage).
 
-Evaporation : The so-called Class A pan evaporation (mm) in the 24 hours to 9am.
+high_blood_pressure : If the patient has hypertension (boolean).
 
-Sunshine : The number of hours of bright sunshine in the day.
+platelets : Platelets in the blood (kiloplatelets/mL).
 
-WindGustDir : The direction of the strongest wind gust in the 24 hours to midnight.
+serum_creatinine : Level of serum creatinine in the blood (mg/dL).
 
-WindGustSpeed : The speed (km/h) of the strongest wind gust in the 24 hours to midnight.
+serum_sodium : Level of serum sodium in the blood (mEq/L).
 
-WindDir9am : Direction of the wind at 9am.
+sex : Woman or man (binary).
+
+smoking : If the patient smokes or not (boolean).
+
+time : Follow-up period (days).
+
+DEATH_EVENT : If the patient deceased during the follow-up period (boolean).
+
 
 ### Access
 *TODO*: Explain how you are accessing the data in your workspace.
