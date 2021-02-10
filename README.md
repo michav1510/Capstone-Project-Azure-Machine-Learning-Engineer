@@ -13,7 +13,7 @@ two different algorithms and deploy the best model. Finally the endpoint produce
 
 *TODO*: Explain about the data you are using and where you got it from.
 
-The dataset I used is heart_failure_clinical_records_dataset.csv(https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). It describes some recorded health indicators metrics. The data have almost 300 rows iof the indicators 
+The dataset I used is heart_failure_clinical_records_dataset.csv(https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). It describes some recorded health indicators metrics. The data have almost 300 rows of these indicators recorded from patients. 
 
 ### Task
 
