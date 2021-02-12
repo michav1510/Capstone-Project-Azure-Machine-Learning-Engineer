@@ -9,6 +9,8 @@ from sklearn.preprocessing import OneHotEncoder
 import pandas as pd
 from azureml.core.run import Run
 from azureml.data.dataset_factory import TabularDatasetFactory
+from argparse import ArgumentParser
+
 
 ds = pd.read_csv('./heart_failure_clinical_records_dataset.csv')
 
