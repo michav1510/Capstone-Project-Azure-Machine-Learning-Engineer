@@ -1,0 +1,34 @@
+2021/03/07 12:56:41 Attempt 1 of http call to http://10.0.0.8:16384/sendlogstoartifacts/info
+2021/03/07 12:56:41 Attempt 1 of http call to http://10.0.0.8:16384/sendlogstoartifacts/status
+[2021-03-07T12:56:42.388946] Entering context manager injector.
+[context_manager_injector.py] Command line Options: Namespace(inject=['ProjectPythonPath:context_managers.ProjectPythonPath', 'RunHistory:context_managers.RunHistory', 'TrackUserError:context_managers.TrackUserError'], invocation=['train.py', '--C', '20', '--max_iter', '100'])
+Script type = None
+Starting the daemon thread to refresh tokens in background for process with pid = 104
+[2021-03-07T12:56:44.038517] Entering Run History Context Manager.
+[2021-03-07T12:56:44.740304] Current directory: /mnt/batch/tasks/shared/LS_root/jobs/quick-starts-ws-139995/azureml/hd_b182d068-f832-4894-9ab8-b812a442974a_0/mounts/workspaceblobstore/azureml/HD_b182d068-f832-4894-9ab8-b812a442974a_0
+[2021-03-07T12:56:44.740549] Preparing to call script [train.py] with arguments:['--C', '20', '--max_iter', '100']
+[2021-03-07T12:56:44.740621] After variable expansion, calling script [train.py] with arguments:['--C', '20', '--max_iter', '100']
+
+Starting the daemon thread to refresh tokens in background for process with pid = 104
+
+
+[2021-03-07T12:56:44.753446] The experiment failed. Finalizing run...
+Cleaning up all outstanding Run operations, waiting 900.0 seconds
+1 items cleaning up...
+Cleanup took 0.08278036117553711 seconds
+Starting the daemon thread to refresh tokens in background for process with pid = 104
+Traceback (most recent call last):
+  File "train.py", line 1, in <module>
+    from sklearn.linear_model import LogisticRegression
+ModuleNotFoundError: No module named 'sklearn'
+
+[2021-03-07T12:56:44.978138] Finished context manager injector with Exception.
+2021/03/07 12:56:45 Could not parse control script error at path: /mnt/batch/tasks/workitems/11ab90f8-a0cb-447a-83b4-2b2d353eb2d9/job-1/hd_b182d068-f832-489_670b817b-d996-45f4-90a9-313ffae2ccc8/wd/runTaskLetTask_error.json because: File /mnt/batch/tasks/workitems/11ab90f8-a0cb-447a-83b4-2b2d353eb2d9/job-1/hd_b182d068-f832-489_670b817b-d996-45f4-90a9-313ffae2ccc8/wd/runTaskLetTask_error.json doesn't exist, continuing without
+2021/03/07 12:56:45 Failed to run the wrapper cmd with err: exit status 1
+2021/03/07 12:56:45 Attempt 1 of http call to http://10.0.0.8:16384/sendlogstoartifacts/status
+2021/03/07 12:56:46 mpirun version string: {
+Intel(R) MPI Library for Linux* OS, Version 2018 Update 3 Build 20180411 (id: 18329)
+Copyright 2003-2018 Intel Corporation.
+}
+2021/03/07 12:56:46 MPI publisher: intel ; version: 2018
+2021/03/07 12:56:46 Process Exiting with Code:  1
