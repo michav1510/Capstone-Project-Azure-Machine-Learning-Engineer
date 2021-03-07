@@ -14,6 +14,9 @@ from argparse import ArgumentParser
 
 ds = pd.read_csv('./heart_failure_clinical_records_dataset.csv')
 
+x = ds[['age', 'anaemia', 'creatinine_phosphokinase', 'diabetes', 'ejection_fraction', 'high_blood_pressure', 'platelets', 'serum_creatinine', 'serum_sodium', 'sex', 'smoking', 'time']]
+y = ds[['DEATH_EVENT']]
+
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.15,random_state=0)
 
 run = Run.get_context()
