@@ -85,13 +85,13 @@ automl_config = AutoMLConfig(compute_target = compute_target,
 
 * ```n_cross_validations``` : It is how many cross validations set to make when user validation data is not specified. The main set of data is split to ```n=2``` sets and it is performed train on the one of the two and validation to the other set. So this procedure is performed two times, because we have ```n_cross_validations=2```. 
 
-* ```primary_metric``` :  The metric that Automated Machine Learning will optimize for model selection. We have set the 'accuracy'.
+* ```primary_metric = 'accuracy' ``` :  The metric that Automated Machine Learning will optimize for model selection. We have set the 'accuracy'.
 
-* ``` enable_early_stopping ``` :
+* ``` enable_early_stopping = True``` : Whether to enable early termination if the score is not improving in the short term. 
 
-* ``` max_concurrent_iterations ``` :
+* ``` max_concurrent_iterations = 4``` : The maximum number of iterations that could be executed in parallel.  It is recommended you create a dedicated cluster per experiment, and match the number of max_concurrent_iterations of your experiment to the number of nodes in the cluster. This way, you use all the nodes of the cluster at the same time with the number of concurrent child runs/iterations you want. For this I set it to 4.
 
-* ``` experiment_timeout_minutes ``` :
+* ``` experiment_timeout_minutes = 20 ``` :  In previous projects we couldn't set more than 30 minutes. In this project It has been set that way and we can't change it for the purpose of this assignment.
 
 * ``` verbosity ``` :
 
