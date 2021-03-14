@@ -107,11 +107,11 @@ automl_config = AutoMLConfig(compute_target = compute_target,
 
 * ``` featurization= 'auto' ``` : Indicator for whether featurization step should be done automatically or not, or whether customized featurization should be used. I used ``` auto``` so featurization step step should be done automatically.
 
-* ``` debug_log = "automl_errors.log" ``` :
+* ``` debug_log = "automl_errors.log" ``` : The debug information are written to the  ```automl_errors.log```.
 
-* ``` enable_onnx_compatible_models ``` :
-
-* ``` blocked_models ``` :
+* ``` enable_onnx_compatible_models = False ``` : Whether to enable or disable enforcing the ONNX-compatible models.
+* 
+* ``` blocked_models = ['XGBoostClassifier'] ``` : What algorithm we want from AutoML to not run. I selected ``` XGBoostClassifier```, the answer could be found in here https://knowledge.udacity.com/questions/509841. For those who don't have access it is for compatibility issues. So the lack of time to make the ``` XGBoostClassifier``` to run make me to enforce the AutoML to not run this specific algorithm. 
 
 
 ### Results
