@@ -131,6 +131,12 @@ AUC micro | 0.90959
 ![automl_best_run_2](/Screenshots/automl_best_run_2.png)
 ![automl_best_run_3](/Screenshots/automl_best_run_3.png)
 
+I think that there is a lot of space to improve the above results. Some improvements could be : 
+1) Set bigger ```n_cross_validation``` equals to 5 or 7. I think 2 sets are somehow small. 
+2) I would let the algorithm to run for much more time. Thus I would change  ``` "experiment_timeout_minutes": 20 ``` to an hour or more. 
+3) I would somehow enables also the ``` XGBoostClassifier ``` to run and fix the compatibility issues.
+4) I would disable the early stopping policy and thus set ``` enable_early_stopping = False```.
+
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
