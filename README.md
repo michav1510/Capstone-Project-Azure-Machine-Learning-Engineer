@@ -101,11 +101,11 @@ automl_config = AutoMLConfig(compute_target = compute_target,
 
 * ``` training_data = dataset ``` : The data on which the algorithm will be trained.
 
-* ``` label_column_name ``` :
+* ``` label_column_name='DEATH_EVENT' ``` : The name of the column that contains the labels of the train data, i.e the target column we want to predict.
 
-* ``` path ``` :
+* ``` path= project_folder``` : The path to the Azure ML folder of the project.
 
-* ``` featurization ``` :
+* ``` featurization= 'auto' ``` : Indicator for whether featurization step should be done automatically or not, or whether customized featurization should be used. I used ``` auto``` so feature engineering step should be done automatically.
 
 * ``` debug_log ``` :
 
