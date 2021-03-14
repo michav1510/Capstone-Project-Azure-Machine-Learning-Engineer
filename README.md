@@ -118,7 +118,7 @@ automl_config = AutoMLConfig(compute_target = compute_target,
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
-In the following screenshots you can verify that the best run is : 
+In the below screenshots you can verify that the best run is the one at the below table: 
 Best algorightm | VotingEnsemble
 --- | ---  
 Run Id | AutoML_c4027857-1690-446a-959e-02880c59deed_49
@@ -138,7 +138,12 @@ I think that there is a lot of space to improve the above results. Some improvem
 4) I would disable the early stopping policy and thus set ``` enable_early_stopping = False```.
 
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with its parameters.
+
+In the following screenshots we can see the `RunDetails` widget : 
+![run_details_widget_automl_1](/Screenshots/run_details_widget_automl_1.png)
+![run_details_widget_automl_2](/Screenshots/run_details_widget_automl_2.png)
+![run_details_widget_automl_3](/Screenshots/run_details_widget_automl_3.png)
 
 
 
