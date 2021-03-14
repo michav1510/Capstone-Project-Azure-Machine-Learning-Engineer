@@ -119,9 +119,16 @@ automl_config = AutoMLConfig(compute_target = compute_target,
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
 In the following screenshots you can verify that the best run is : 
-Attempt | #1 
+Best algorightm | VotingEnsemble
 --- | ---  
-Seconds | 301 
+Run Id | AutoML_c4027857-1690-446a-959e-02880c59deed_49
+--- | ---
+Accuracy | 0.85622
+--- | ---
+AUC macro | 0.89710
+--- | ---
+AUC micro | 0.95909
+--- | ---
 
 ![automl_best_run_1](/Screenshots/automl_best_run_1.png)
 ![automl_best_run_2](/Screenshots/automl_best_run_2.png)
