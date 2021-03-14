@@ -51,10 +51,68 @@ DEATH_EVENT : If the patient deceased during the follow-up period (boolean).
 ### Access
 *TODO*: Explain how you are accessing the data in your workspace.
 
-I upload the dataset in the Azure ML studio from local file (the one that I have uploaded also here in github heart_failure_clinical_records_dataset.csv). As you can see in either the automl.ipynb and hyperparameter_tuning.ipynb the code is checking whether or not the .csv has been uploaded if not then the code makes the dataset getting it from this repo. 
+I upload the dataset in the Azure ML studio from local file (the one that I have uploaded also here in github heart_failure_clinical_records_dataset.csv). As you can see in either the automl.ipynb and hyperparameter_tuning.ipynb the code is checking whether or not the .csv has been uploaded, if not then the code makes the dataset getting it from this repo. 
 
 ## Automated ML
+
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+
+The AutoML settings I have used are below : 
+
+```
+automl_settings = {"n_cross_validations": 2,
+                    "primary_metric": 'accuracy',
+                    "enable_early_stopping": True,
+                    "max_concurrent_iterations": 4,
+                    "experiment_timeout_minutes": 20,
+                    "verbosity": logging.INFO
+                    }
+```      
+
+```
+automl_config = AutoMLConfig(compute_target = compute_target,
+                            task='classification',
+                            training_data=dataset,
+                            label_column_name='DEATH_EVENT',
+                            path = project_folder,
+                            featurization= 'auto',
+                            debug_log = "automl_errors.log",
+                            enable_onnx_compatible_models=False,
+                            blocked_models = ['XGBoostClassifier'],
+                            **automl_settings
+                            )
+```
+
+* ```n_cross_validations``` : It is how many cross validations set to make when user validation data is not specified. The main set of data is split to ```n=2``` sets and it is performed train on the one of the two and validation to the other set. So this procedure is performed two times, because we have ```n_cross_validations=2```. 
+
+* ```primary_metric``` :  The metric that Automated Machine Learning will optimize for model selection. We have set the 'accuracy'.
+
+* ``` enable_early_stopping ``` :
+
+* ``` max_concurrent_iterations ``` :
+
+* ``` experiment_timeout_minutes ``` :
+
+* ``` verbosity ``` :
+
+* ``` compute_target ``` :
+
+* ``` task ``` :
+
+* ``` training_data ``` :
+
+* ``` label_column_name ``` :
+
+* ``` path ``` :
+
+* ``` featurization ``` :
+
+* ``` debug_log ``` :
+
+* ``` enable_onnx_compatible_models ``` :
+
+* ``` blocked_models ``` :
+
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
