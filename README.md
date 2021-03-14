@@ -124,7 +124,7 @@ Best algorightm | VotingEnsemble
 Run Id | AutoML_c4027857-1690-446a-959e-02880c59deed_49
 Accuracy | 0.85622
 AUC macro | 0.89710
-AUC micro | 0.95909
+AUC micro | 0.90959
 
 
 ![automl_best_run_1](/Screenshots/automl_best_run_1.png)
