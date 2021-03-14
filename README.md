@@ -51,6 +51,8 @@ DEATH_EVENT : If the patient deceased during the follow-up period (boolean).
 ### Access
 *TODO*: Explain how you are accessing the data in your workspace.
 
+I upload the dataset in the Azure ML studio from local file (the one that I have uploaded also here in github heart_failure_clinical_records_dataset.csv). As you can see in either the automl.ipynb and hyperparameter_tuning.ipynb the code is checking whether or not the .csv has been uploaded if not then the code makes the dataset getting it from this repo. 
+
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
 
