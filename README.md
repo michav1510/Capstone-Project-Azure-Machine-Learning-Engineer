@@ -118,6 +118,7 @@ automl_config = AutoMLConfig(compute_target = compute_target,
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
+![sdfsdfdsfdsf](/Screenshots/automl_best_run_1.png)
 
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
