@@ -93,13 +93,13 @@ automl_config = AutoMLConfig(compute_target = compute_target,
 
 * ``` experiment_timeout_minutes = 20 ``` :  It defines how long, in minutes, your experiment should continue to run. In previous projects we couldn't set more than 30 minutes. In this project we could use more but it is not needed for so small training set. However, it is for sure something that you could change for better performance.
 
-* ``` "verbosity": logging.INFO ``` :
+* ``` "verbosity": logging.INFO ``` : It is the verbosity level you want to produced.
 
-* ``` compute_target ``` :
+* ``` compute_target = compute_target``` : The compute target with specific vm_size and max_nodes. The one that has been configured with name 'aml_compute' in the automl.ipynb.
 
-* ``` task ``` :
+* ``` task='classification' ``` : We have a classification task to do, we seek to predict whether or not the person will have a heart failure. With other words we are trying to predict the ``` DEATH_EVENT ```.
 
-* ``` training_data ``` :
+* ``` training_data = dataset ``` : The data on which the algorithm will be trained.
 
 * ``` label_column_name ``` :
 
