@@ -119,9 +119,9 @@ automl_config = AutoMLConfig(compute_target = compute_target,
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
 In the following screenshots you can verify that the best run is : 
-Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 
---- | --- | --- | --- |--- |--- |--- |--- |---
-Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 
+Attempt | #1 
+--- | ---  
+Seconds | 301 
 
 ![automl_best_run_1](/Screenshots/automl_best_run_1.png)
 ![automl_best_run_2](/Screenshots/automl_best_run_2.png)
