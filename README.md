@@ -91,9 +91,9 @@ automl_config = AutoMLConfig(compute_target = compute_target,
 
 * ``` max_concurrent_iterations = 4``` : The maximum number of iterations that could be executed in parallel.  It is recommended you create a dedicated cluster per experiment, and match the number of max_concurrent_iterations of your experiment to the number of nodes in the cluster. This way, you use all the nodes of the cluster at the same time with the number of concurrent child runs/iterations you want. For this I set it to 4.
 
-* ``` experiment_timeout_minutes = 20 ``` :  In previous projects we couldn't set more than 30 minutes. In this project It has been set that way and we can't change it for the purpose of this assignment.
+* ``` experiment_timeout_minutes = 20 ``` :  It defines how long, in minutes, your experiment should continue to run. In previous projects we couldn't set more than 30 minutes. In this project we could use more but it is not needed for so small training set. However, it is for sure something that you could change for better performance.
 
-* ``` verbosity ``` :
+* ``` "verbosity": logging.INFO ``` :
 
 * ``` compute_target ``` :
 
