@@ -122,7 +122,7 @@ In the following screenshots you can verify that the best run is :
 Best algorightm | VotingEnsemble
 --- | ---  
 Run Id | AutoML_c4027857-1690-446a-959e-02880c59deed_49
- | 
+--- | --- 
 Accuracy | 0.85622
 --- | ---
 AUC macro | 0.89710
