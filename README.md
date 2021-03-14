@@ -105,9 +105,9 @@ automl_config = AutoMLConfig(compute_target = compute_target,
 
 * ``` path= project_folder``` : The path to the Azure ML folder of the project.
 
-* ``` featurization= 'auto' ``` : Indicator for whether featurization step should be done automatically or not, or whether customized featurization should be used. I used ``` auto``` so feature engineering step should be done automatically.
+* ``` featurization= 'auto' ``` : Indicator for whether featurization step should be done automatically or not, or whether customized featurization should be used. I used ``` auto``` so featurization step step should be done automatically.
 
-* ``` debug_log ``` :
+* ``` debug_log = "automl_errors.log" ``` :
 
 * ``` enable_onnx_compatible_models ``` :
 
