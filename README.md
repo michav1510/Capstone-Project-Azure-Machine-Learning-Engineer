@@ -213,9 +213,9 @@ We can understand that there is a lot of difference from the perspective of accu
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 In the following screenshots we can see the `RunDetails` widget : 
-![run_details_widget_automl_1.png](/Screenshots/run_details_widget_automl_1.png)
-![run_details_widget_automl_2.png](/Screenshots/run_details_widget_automl_2.png)
-![run_details_widget_automl_3.png](/Screenshots/run_details_widget_automl_3.png)
+![run_details_widget_hyperdrive_1.png](/Screenshots/run_details_widget_hyperdrive_1.png)
+![run_details_widget_hyperdrive_2.png](/Screenshots/run_details_widget_hyperdrive_2.png)
+![run_details_widget_hyperdrive_3.png](/Screenshots/run_details_widget_hyperdrive_3.png)
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
