@@ -186,8 +186,9 @@ About the other parameters of the ```HyperDriveConfig``` :
 
 * ```policy=early_termination_policy``` : This is where I have set the policy I described above.
 
-* ```max_concurrent_runs=4 ``` : 
+* ```max_concurrent_runs=4 ``` : Maximum number of runs to run concurrently. Of course the best is 4 as it is the number of cluster nodes.
 
+* ```max_total_runs=16``` : Maximum number of runs. This is the upper bound, there may be fewer runs when the sample space is smaller than this value. 
 
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
