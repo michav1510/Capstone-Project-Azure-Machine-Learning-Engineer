@@ -220,6 +220,9 @@ In the following screenshots we can see the `RunDetails` widget :
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
+The best model came out from the AutoML, this is sure from what we have seen from the above results. 
+The model that I have deployed in order to consume it is the one that produced with the VotingEnsemble algorithm.
+
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 - A working model
