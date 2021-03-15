@@ -234,15 +234,14 @@ deployment_config = AciWebservice.deploy_configuration(cpu_cores = 1,
 * ``` auth_enabled = True``` : Whether or not to enable authentication for this Webservice. I have enabled the autentication.
 * ``` enable_app_insights = True ``` : Whether or not to enable AppInsights for this Webservice. I have enabled it and you can see exactly what is it viewing my screen recording video.
 
-
-
-
-
 Below you can see the screenshots of the endpoint as active : 
 
 ![active_endpoint_1.png](Screenshots/active_endpoint_1.png)
 ![active_endpoint_2.png](Screenshots/active_endpoint_2.png)
 ![active_endpoint_3.png](Screenshots/active_endpoint_3.png)
+
+If you want to consume it you can use a python script as the [endpoint.py](https://github.com/michav1510/Capstone-Project-Azure-Machine-Learning-Engineer/blob/main/endpoint.py). You have to know the ```scoring_uri``` which is the url of the REST endpoint and the key. Send it with a json and the you will take an answer. 
+
 
 
 
