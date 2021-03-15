@@ -223,11 +223,23 @@ In the following screenshots we can see the `RunDetails` widget :
 The best model came out from the AutoML, this is sure from what we have seen from the above results. 
 The model that I have deployed in order to consume it is the one that produced with the VotingEnsemble algorithm.
 
+About the deployment configurations, I will analyse some of them : 
+``` 
+deployment_config = AciWebservice.deploy_configuration(cpu_cores = 1, 
+                                                    memory_gb = 1, 
+                                                    auth_enabled= True, 
+                                                    enable_app_insights= True)
+```
+
+
+
 Below you can see the screenshots of the endpoint as active : 
 
 ![active_endpoint_1.png](Screenshots/active_endpoint_1.png)
 ![active_endpoint_2.png](Screenshots/active_endpoint_2.png)
 ![active_endpoint_3.png](Screenshots/active_endpoint_3.png)
+
+
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
