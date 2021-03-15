@@ -149,7 +149,21 @@ In the following screenshots we can see the `RunDetails` widget :
 
 
 ## Hyperparameter Tuning
+
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+
+Tha algorithm used for the training is Logistic Regression. The two hyperparameters of the Logistic Regression are tuned with the hyperdrive to find the model with the best accuracy on the test set. The two hyperparameters are the following:
+
+``` C ``` : The inverse of the reqularization strength. The smaller the number the stronger the regularization.
+
+```max_iter``` : Maximum number of iterations to converge.
+
+
+I specify the parameter sampler using the parameters C and max_iter and chose discrete values with choice for both parameters.
+
+Parameter sampler
+
+I specified the parameter sampler as such:
 
 
 ### Results
