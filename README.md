@@ -230,6 +230,11 @@ deployment_config = AciWebservice.deploy_configuration(cpu_cores = 1,
                                                     auth_enabled= True, 
                                                     enable_app_insights= True)
 ```
+* ``` AciWebservice ``` : A deployed service is created from a model, script, and associated files. The resulting web service is a load-balanced, HTTP endpoint with a REST API. 
+* ``` auth_enabled = True``` : Whether or not to enable authentication for this Webservice. I have enabled the autentication.
+* ``` enable_app_insights = True ``` : Whether or not to enable AppInsights for this Webservice. I have enabled it and you can see exactly what is it viewing my screen recording video.
+
+
 
 
 
