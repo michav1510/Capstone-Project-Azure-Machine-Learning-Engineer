@@ -156,14 +156,26 @@ Tha algorithm used for the training is Logistic Regression. The two hyperparamet
 
 ``` C ``` : The inverse of the reqularization strength. The smaller the number the stronger the regularization.
 
-```max_iter``` : Maximum number of iterations to converge.
+``` max_iter ``` : Maximum number of iterations to converge.
 
+**Benefits of the parameter sampler**
 
-I specify the parameter sampler using the parameters C and max_iter and chose discrete values with choice for both parameters.
+I chose the ```RandomParameterSampling```, the hyperparameters are randomly selected from the search space. The search space for the two hyperaparameters is the following:
 
-Parameter sampler
+```
+   '--C' : choice(0.001,0.01,0.1,1,10,20,50,100,200,500,1000),
+   '--max_iter': choice(50,100,300)
+```
+where the choice define discrete space over the values. The benefits of the ```RandomParameterSampling```, is that it is more fast than for example the ```GridParameterSampling``` where all the possible values from the search space are used, and it supports early termination of low-performance runs.
 
-I specified the parameter sampler as such:
+I chose the ```BanditPolicy``` which is an "aggressive" early stopping policy with the meaning that cuts more runs than a conservative one like the ```MedianStoppingPolicy```, so it saves computational time. There are three configuration parameters ```slack_factor, evaluation_interval(optional), delay_evaluation(optional)```. 
+* ```slack_factor/slack_amount``` : (factor)The slack allowed with respect to the best performing training run.(amount) Specifies the allowable slack as an absolute amount, instead of a ratio.
+
+* ```evaluation_interval``` : (optional) The frequency for applying the policy.
+
+* ```delay_evaluation``` : (optional) Delays the first policy evaluation for a specified number of intervals.
+
+I set ```evaluation_interval=2, slack_factor=0.1```.
 
 
 ### Results
