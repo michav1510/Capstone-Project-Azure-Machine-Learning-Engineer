@@ -204,7 +204,18 @@ runId | HD_d145f066-c650-4d4a-877b-0b85cc305c65_0
 ![best_run_hyperdrive_model_2.png](/Screenshots/best_run_hyperdrive_model_2.png)
 ![best_run_hyperdrive_model_3.png](/Screenshots/best_run_hyperdrive_model_3.png)
 
+We can understand that there is a lot of difference from the perspective of accuracy between the Hyperdrive and the AutoML since the last hit an accuracy of ```0.85622``` and the hyperdive's accuracy is ```0.778```. Some improvements for the Hypderdrive method could be :
+
+1) Set a ```GridParameterSampling``` so we can check more hyperparameters for better results.
+2) Change the policy to a more "conservative" one. I would set as policy the ```MedianStoppingPolicy``` so the runs wouldn't stop more easy.
+3) Set as ```max_total_runs``` a much more big number.
+
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+
+In the following screenshots we can see the `RunDetails` widget : 
+![run_details_widget_automl_1.png](/Screenshots/run_details_widget_automl_1.png)
+![run_details_widget_automl_2.png](/Screenshots/run_details_widget_automl_2.png)
+![run_details_widget_automl_3.png](/Screenshots/run_details_widget_automl_3.png)
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
