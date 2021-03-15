@@ -177,6 +177,17 @@ I chose the ```BanditPolicy``` which is an "aggressive" early stopping policy wi
 
 I set ```evaluation_interval=2, slack_factor=0.1```.
 
+About the other parameters of the ```HyperDriveConfig``` : 
+
+* ```primary_metric_name='Accuracy'``` : Meaning that our interest is about the 'Accuracy'. 
+                                    
+
+* ```primary_metric_goal=PrimaryMetricGoal.MAXIMIZE```: Meaning that we want to Maximize the primary metric and not minimize it for example.
+
+* ```policy=early_termination_policy``` : This is where I have set the policy I described above.
+
+* ```max_concurrent_runs=4 ``` : 
+
 
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
