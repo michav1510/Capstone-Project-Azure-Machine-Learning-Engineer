@@ -193,6 +193,17 @@ About the other parameters of the ```HyperDriveConfig``` :
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
+In the below screenshots you can verify that the best run is the one at the below table: 
+runId | HD_d145f066-c650-4d4a-877b-0b85cc305c65_0
+--- | ---  
+ Accuracy | 0.778 
+ Regularization Strength  | 500
+ Max Iterations | 50
+ 
+![best_run_hyperdrive_model_1.png](/Screenshots/best_run_hyperdrive_model_1.png)
+![best_run_hyperdrive_model_2.png](/Screenshots/best_run_hyperdrive_model_2.png)
+![best_run_hyperdrive_model_3.png](/Screenshots/best_run_hyperdrive_model_3.png)
+
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Model Deployment
@@ -206,3 +217,4 @@ About the other parameters of the ```HyperDriveConfig``` :
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+ 
