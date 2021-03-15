@@ -254,9 +254,10 @@ The following screenshots depict the json that are in the [endpoint.py](https://
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
 
-## Future 
-I have pointed out at the 
+## Future Improvements 
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
 
+* I have pointed the future improvements I would suggest for both the AutoML and the HyperDrive in the corresponding sections. 
+* About the dataset I would suggest to increase the sample data because 299 rows of data is very very small.
 
  
