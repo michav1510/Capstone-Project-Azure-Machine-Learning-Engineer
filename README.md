@@ -4,20 +4,13 @@ This project is the capstone project for "Machine Learning Engineer for Microsof
 a public external dataset. This dataset will be used for train a model using 1) an Automated ML 2) Hyperdrive. After we will compare the performance of these
 two different algorithms and deploy the best model. Finally the endpoint produced will be used to get some answers about predictions.
 
-## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
-
 ## Dataset
 
 ### Overview
 
-*TODO*: Explain about the data you are using and where you got it from.
-
 The dataset I used is [heart_failure_clinical_records_dataset.csv](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data). It describes some recorded health indicators metrics. The data have almost 300 rows of these indicators recorded from patients. 
 
 ### Task
-
-*TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
 
 I am using this data in order to predict the DEATH_EVENT i.e. whether or not the patient deceased during the follow-up period (boolean). The features of the data are the following:
 
@@ -49,13 +42,10 @@ DEATH_EVENT : If the patient deceased during the follow-up period (boolean).
 
 
 ### Access
-*TODO*: Explain how you are accessing the data in your workspace.
 
 I upload the dataset in the Azure ML studio from local file (the one that I have uploaded also here in github heart_failure_clinical_records_dataset.csv). As you can see in either the automl.ipynb and hyperparameter_tuning.ipynb the code is checking whether or not the .csv has been uploaded, if not then the code makes the dataset getting it from this repo. 
 
 ## Automated ML
-
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
 
 The AutoML settings I have used are below : 
 
@@ -116,7 +106,6 @@ automl_config = AutoMLConfig(compute_target = compute_target,
 
 
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
 
 In the below screenshots you can verify that the best run is the one at the below table: 
 Best algorightm | VotingEnsemble
@@ -138,7 +127,6 @@ I think that there is a lot of space to improve the above results. Some improvem
 4) I would disable the early stopping policy and thus set ``` enable_early_stopping = False```.
 
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with its parameters.
 
 In the following screenshots we can see the `RunDetails` widget : 
 ![run_details_widget_automl_1](/Screenshots/run_details_widget_automl_1.png)
@@ -149,8 +137,6 @@ In the following screenshots we can see the `RunDetails` widget :
 
 
 ## Hyperparameter Tuning
-
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
 Tha algorithm used for the training is Logistic Regression. The two hyperparameters of the Logistic Regression are tuned with the hyperdrive to find the model with the best accuracy on the test set. The two hyperparameters are the following:
 
@@ -191,7 +177,6 @@ About the other parameters of the ```HyperDriveConfig``` :
 * ```max_total_runs=16``` : Maximum number of runs. This is the upper bound, there may be fewer runs when the sample space is smaller than this value. 
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
 In the below screenshots you can verify that the best run is the one at the below table: 
 runId | HD_d145f066-c650-4d4a-877b-0b85cc305c65_0
@@ -210,15 +195,12 @@ We can understand that there is a lot of difference from the perspective of accu
 2) Change the policy to a more "conservative" one. I would set as policy the ```MedianStoppingPolicy``` so the runs wouldn't stop more easy.
 3) Set as ```max_total_runs``` a much more big number.
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
-
 In the following screenshots we can see the `RunDetails` widget : 
 ![run_details_widget_hyperdrive_1.png](/Screenshots/run_details_widget_hyperdrive_1.png)
 ![run_details_widget_hyperdrive_2.png](/Screenshots/run_details_widget_hyperdrive_2.png)
 ![run_details_widget_hyperdrive_3.png](/Screenshots/run_details_widget_hyperdrive_3.png)
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 
 The best model came out from the AutoML, this is sure from what we have seen from the above results. 
 The model that I have deployed in order to consume it is the one that produced with the VotingEnsemble algorithm.
@@ -249,13 +231,14 @@ The following screenshots depict the json that are in the [endpoint.py](https://
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+
+[Here](https://youtu.be/2oCTfpyBISc) you can see a screen recording which shows : 
 - A working model
 - Demo of the deployed  model
 - Demo of a sample request sent to the endpoint and its response
 
+
 ## Future Improvements 
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
 
 * I have pointed the future improvements I would suggest for both the AutoML and the HyperDrive in the corresponding sections. 
 * About the dataset I would suggest to increase the sample data because 299 rows of data is very very small.
