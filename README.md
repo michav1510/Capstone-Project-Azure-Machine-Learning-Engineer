@@ -4,6 +4,19 @@ This project is the capstone project for "Machine Learning Engineer for Microsof
 a public external dataset. This dataset will be used for train a model using 1) an Automated ML 2) Hyperdrive. After we will compare the performance of these
 two different algorithms and deploy the best model. Finally the endpoint produced will be used to get some answers about predictions.
 
+## Project Set Up and Installation
+In this repo you will find the following files : 
+* automl.ipynb :  It is the notebook file for the AutoML.
+* endpoint.py : This is the python script I used to consume the produced endpoint.
+* env.yml : This is the environment file I downloaded from the Azure ML Studio. 
+* heart_failure_clinical_records_dataset.csv : This is the dataset I used from [here](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data).
+* hyper-model.pkl : This is the best model from the HyperDrive I downloaded from Azure ML studio.
+* hyperparameter_tuning.ipynb : This is the notebook file I used for the HyperDrive. 
+* model.pkl :  This is the best model from the AutoML I downloaded from Azure ML studio.
+* scoring_file_v_1_0_0.py : I downloaded this script from Azure Machine Learning Studio and it is used to deploy the model.
+* train.py : A python script that the HyperDrive operates on in order to produce the runs and find the best model.
+
+
 ## Dataset
 
 ### Overview
@@ -228,7 +241,10 @@ The following screenshots depict the json that are in the [endpoint.py](https://
 ![running_endpoint_1.png](Screenshots/running_endpoint_1.png)
 ![running_endpoint_2.png](Screenshots/running_endpoint_2.png)
 
+Some extra screenshots which show us the fitted model are the following : 
 
+![Screenshot_1.png](Screenshots/Screenshot_1.png)
+![Screenshot_2.png](Screenshots/Screenshot_2.png)
 
 ## Screen Recording
 
