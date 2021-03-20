@@ -238,8 +238,8 @@ deployment_config = AciWebservice.deploy_configuration(cpu_cores = 1,
 Below you can see the screenshots of the endpoint as active : 
 
 ![active_endpoint_1.png](Screenshots/active_endpoint_1.png)
-![active_endpoint_2.png](Screenshots/active_endpoint_2.png)
 ![active_endpoint_3.png](Screenshots/active_endpoint_3.png)
+![active_endpoint_2.png](Screenshots/active_endpoint_2.png)
 
 If you want to consume it you can use a python script as the [endpoint.py](https://github.com/michav1510/Capstone-Project-Azure-Machine-Learning-Engineer/blob/main/endpoint.py). You have to know the ```scoring_uri``` which is the url of the REST endpoint and the key(primary or secondary). Send it with a json and then you will take an answer. 
 The following screenshots depict the json that are in the [endpoint.py](https://github.com/michav1510/Capstone-Project-Azure-Machine-Learning-Engineer/blob/main/endpoint.py)(first screenshot) and the corresponding answers(last screenshot) which are both true as we can see: 
