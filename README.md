@@ -144,6 +144,7 @@ I think that there is a lot of space to improve the above results. Some improvem
 
 
 In the following screenshots we can see the `RunDetails` widget : 
+At the below screenshots we can see, back in the Jupyter Notebook automl.ipynb, the Run Details. We see a every time another part of the widget but all the screenshots depict the same cell. We see the status whether is running or not(1st screenshot), and some details of specific runs(2nd,3rd screenshot).
 ![run_details_widget_automl_1](/Screenshots/run_details_widget_automl_1.png)
 ![run_details_widget_automl_2](/Screenshots/run_details_widget_automl_2.png)
 ![run_details_widget_automl_3](/Screenshots/run_details_widget_automl_3.png)
