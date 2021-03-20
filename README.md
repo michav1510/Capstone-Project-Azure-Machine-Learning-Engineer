@@ -4,17 +4,19 @@ This project is the capstone project for "Machine Learning Engineer for Microsof
 a public external dataset. This dataset will be used for train a model using 1) an Automated ML 2) Hyperdrive. After we will compare the performance of these
 two different algorithms and deploy the best model. Finally the endpoint produced will be used to get some answers about predictions.
 
-## Project Set Up and Installation
-In this repo you will find the following files : 
+## Project Files 
+In this repo you will find the following files, which required to run the experiments: 
 * automl.ipynb :  It is the notebook file for the AutoML.
 * endpoint.py : This is the python script I used to consume the produced endpoint.
-* env.yml : This is the environment file I downloaded from the Azure ML Studio. 
-* heart_failure_clinical_records_dataset.csv : This is the dataset I used from [here](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data).
-* hyper-model.pkl : This is the best model from the HyperDrive I downloaded from Azure ML studio.
+* train.py : A python script that the HyperDrive operates on in order to produce the runs and find the best model.
 * hyperparameter_tuning.ipynb : This is the notebook file I used for the HyperDrive. 
+* heart_failure_clinical_records_dataset.csv : This is the dataset I used from [here](https://www.kaggle.com/andrewmvd/heart-failure-clinical-data).
+The following came out from the running of the experiments:
+* env.yml : This is the environment file I downloaded from the Azure ML Studio. 
+* hyper-model.pkl : This is the best model from the HyperDrive I downloaded from Azure ML studio.
 * model.pkl :  This is the best model from the AutoML I downloaded from Azure ML studio.
 * scoring_file_v_1_0_0.py : I downloaded this script from Azure Machine Learning Studio and it is used to deploy the model.
-* train.py : A python script that the HyperDrive operates on in order to produce the runs and find the best model.
+
 
 
 ## Dataset
