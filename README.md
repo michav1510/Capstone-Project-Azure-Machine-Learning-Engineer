@@ -212,8 +212,8 @@ We can understand that there is a lot of difference from the perspective of accu
 3) Set as ```max_total_runs``` a much more big number.
 
 In the following screenshots we can see the `RunDetails` widget : 
-![run_details_widget_hyperdrive_1.png](/Screenshots/run_details_widget_hyperdrive_1.png)
 ![run_details_widget_hyperdrive_2.png](/Screenshots/run_details_widget_hyperdrive_2.png)
+![run_details_widget_hyperdrive_1.png](/Screenshots/run_details_widget_hyperdrive_1.png)
 ![run_details_widget_hyperdrive_3.png](/Screenshots/run_details_widget_hyperdrive_3.png)
 
 ## Model Deployment
