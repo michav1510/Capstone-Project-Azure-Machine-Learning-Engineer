@@ -128,9 +128,11 @@ Accuracy | 0.85622
 AUC macro | 0.89710
 AUC micro | 0.90959
 
-
+This screenshot is inside the Jupyter Notebook automl.ipynb shows all the details of the best run, its id, its ```automl_settings``` and many other details such as the compute target at which run:
 ![automl_best_run_1](/Screenshots/automl_best_run_1.png)
+This screenshot is from the Azure ML studio but not from the Jupyter Notebook. It is in the Experiment in the Run of AutoML. It shows the best algorithm(up and right) and its accuracy. It has of cource and other details such as the duration of AutoML Run: 
 ![automl_best_run_2](/Screenshots/automl_best_run_2.png)
+Here we are in the the specific Run of Voting Ensemble within the general Run of AutoML we see in the above screenshot. It shows the accuracy,AUC micro, AUC macro(up and right) of this specific algorithm now. There are also again other details such as the duration and the id of this specific run:
 ![automl_best_run_3](/Screenshots/automl_best_run_3.png)
 
 I think that there is a lot of space to improve the above results. Some improvements could be : 
