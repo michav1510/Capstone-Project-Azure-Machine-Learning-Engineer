@@ -128,7 +128,7 @@ Accuracy | 0.85622
 AUC macro | 0.89710
 AUC micro | 0.90959
 
-This screenshot is inside the Jupyter Notebook automl.ipynb shows all the details of the best run, its id, its ```automl_settings``` and many other details such as the compute target at which run:
+This screenshot is inside the Jupyter Notebook automl.ipynb shows all the details of the best run, its id, its ```automl_settings``` and many other details such as the compute target at which ran:
 ![automl_best_run_1](/Screenshots/automl_best_run_1.png)
 This screenshot is from the Azure ML studio but not from the Jupyter Notebook. It is in the Experiment in the Run of AutoML. It shows the best algorithm(up and right) and its accuracy. It has of cource and other details such as the duration of AutoML Run: 
 ![automl_best_run_2](/Screenshots/automl_best_run_2.png)
@@ -201,8 +201,9 @@ runId | HD_d145f066-c650-4d4a-877b-0b85cc305c65_0
  Regularization Strength  | 500
  Max Iterations | 50
  
- 
+This screenshot is inside the Jupyter Notebook hyperparameter_tuning.ipynb shows all the details of the best run, its id, its ```automl_settings``` and many other details such as the compute target at which ran:
 ![best_run_hyperdrive_model_2.png](/Screenshots/best_run_hyperdrive_model_2.png)
+The below screenshots are from the Azure ML studio but not from the Jupyter Notebook. It is in the Experiment section in the Run of Hyperdrive inside the best Run. The best Run here is not another algorithm but specific parameters (C,max_iter) of the same algorithm applies to each run inside the Hyperdrive run: 
 ![best_run_hyperdrive_model_1.png](/Screenshots/best_run_hyperdrive_model_1.png)
 ![best_run_hyperdrive_model_3.png](/Screenshots/best_run_hyperdrive_model_3.png)
 
@@ -213,6 +214,7 @@ We can understand that there is a lot of difference from the perspective of accu
 3) Set as ```max_total_runs``` a much more big number.
 
 In the following screenshots we can see the `RunDetails` widget : 
+At the below screenshots we can see, back in the Jupyter Notebook hyperparameter_tuning.ipynb, the Run Details. We see a every time another part of the widget but all the screenshots depict the same cell. We see the in these photos when the run started(1st screenshot), logs(2nd screenshot), when it finished and the compute target(3rd screenshot).
 ![run_details_widget_hyperdrive_2.png](/Screenshots/run_details_widget_hyperdrive_2.png)
 ![run_details_widget_hyperdrive_1.png](/Screenshots/run_details_widget_hyperdrive_1.png)
 ![run_details_widget_hyperdrive_3.png](/Screenshots/run_details_widget_hyperdrive_3.png)
