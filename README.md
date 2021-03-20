@@ -235,10 +235,12 @@ deployment_config = AciWebservice.deploy_configuration(cpu_cores = 1,
 * ``` auth_enabled = True``` : Whether or not to enable authentication for this Webservice. I have enabled the autentication.
 * ``` enable_app_insights = True ``` : Whether or not to enable AppInsights for this Webservice. I have enabled it and you can see exactly what is it viewing my screen recording video.
 
-Below you can see the screenshots of the endpoint as active : 
-
+Below you can see the screenshots of the endpoint as active.
+This screenshot is from inside the aciservice(the endpoint). It shows the endpoint as Healthy(up and left), the rest endpoint you must call it in order to consume the endpoint(down and left) and also thw Swagger URI. It also shows which model has been deployed(middle left). 
 ![active_endpoint_1.png](Screenshots/active_endpoint_1.png)
+This screenshot shows the Deploy Status as Succeeded(middle right). This is inside the Run of AutoML.
 ![active_endpoint_3.png](Screenshots/active_endpoint_3.png)
+This screenshot shows the Deploy Status as Succeeded(left). This is inside the best Run of the Run of AutoML.
 ![active_endpoint_2.png](Screenshots/active_endpoint_2.png)
 
 If you want to consume it you can use a python script as the [endpoint.py](https://github.com/michav1510/Capstone-Project-Azure-Machine-Learning-Engineer/blob/main/endpoint.py). You have to know the ```scoring_uri``` which is the url of the REST endpoint and the key(primary or secondary). Send it with a json and then you will take an answer. 
@@ -247,8 +249,7 @@ The following screenshots depict the json that are in the [endpoint.py](https://
 ![running_endpoint_1.png](Screenshots/running_endpoint_1.png)
 ![running_endpoint_2.png](Screenshots/running_endpoint_2.png)
 
-Some extra screenshots which show us the fitted model are the following : 
-
+The below screenshots are some extra screenshots show the fitted model of the automl.ipynb. It is inside this notebook:
 ![Screenshot_1.png](Screenshots/Screenshot_1.png)
 ![Screenshot_2.png](Screenshots/Screenshot_2.png)
 
