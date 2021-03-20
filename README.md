@@ -201,8 +201,9 @@ runId | HD_d145f066-c650-4d4a-877b-0b85cc305c65_0
  Regularization Strength  | 500
  Max Iterations | 50
  
-![best_run_hyperdrive_model_1.png](/Screenshots/best_run_hyperdrive_model_1.png)
+ 
 ![best_run_hyperdrive_model_2.png](/Screenshots/best_run_hyperdrive_model_2.png)
+![best_run_hyperdrive_model_1.png](/Screenshots/best_run_hyperdrive_model_1.png)
 ![best_run_hyperdrive_model_3.png](/Screenshots/best_run_hyperdrive_model_3.png)
 
 We can understand that there is a lot of difference from the perspective of accuracy between the Hyperdrive and the AutoML since the last hit an accuracy of ```0.85622``` and the hyperdive's accuracy is ```0.778```. Some improvements for the Hypderdrive method could be :
