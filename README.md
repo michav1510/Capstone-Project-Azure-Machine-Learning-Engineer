@@ -249,7 +249,7 @@ The following screenshots depict the json that are in the [endpoint.py](https://
 ![running_endpoint_1.png](Screenshots/running_endpoint_1.png)
 ![running_endpoint_2.png](Screenshots/running_endpoint_2.png)
 
-The below screenshots are some extra screenshots show the fitted model of the automl.ipynb. It is inside this notebook:
+The below screenshots are some extra screenshots show the fitted model of the automl.ipynb. It is inside the Jupyter Notebook automl.ipynb:
 ![Screenshot_1.png](Screenshots/Screenshot_1.png)
 ![Screenshot_2.png](Screenshots/Screenshot_2.png)
 
